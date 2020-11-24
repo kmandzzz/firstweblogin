@@ -1,0 +1,146 @@
+<!--Primeira tela de Login utilizando apenas o HTML e as CSS-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Tela Test Login | HTML | CSS</title>
+</head>
+
+<!--INFELIZMENTE TIVE QUE COLOCAR AS CSS AQUI POIS NÃO CONSEGUI INTEGRAR NO HEAD-->
+
+<style>
+    
+    body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    background-image:url(./1567666.png);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+    
+    }
+    
+    .login {
+        width: 320px;
+        height: 420px;
+        border: 2px solid #000000;
+        border-radius: 0px 0px 0px 0px;
+        color: #fff;
+        background-color:#000000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%); 
+        box-sizing: border-box;
+        padding: 68px 28px;
+    
+    
+    }
+    
+    .usuario {
+        border-radius: 25px;
+        position: absolute;
+        top: 0px;
+        left: 100px;
+    
+    }
+    
+    h1 {
+        margin: none;
+        padding-top: 25px;
+        padding-left: 0;
+        padding-bottom: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15px;
+    
+    }
+    
+    .login p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    
+    
+    }
+    
+    .login input {
+        width: 100;
+        margin-bottom: 20px;
+    }
+    
+    
+    .login input[type="text"], input[type="password"] {
+        border: none;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: white;
+        font-size: 15px;
+    
+    
+    
+    }
+    
+    .login input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 35px;
+        color: #000;
+        background: #fff;
+        border-radius: 20px;
+        transition: 0.2s;
+    
+    }
+    
+    .login input[type="submit"]:hover {
+        cursor: pointer;
+        background: #ff4d4f;
+        transition: 0.2s;
+    
+    }
+    
+    
+    .login a {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: #44bb44;
+        transition: 0.2s;
+    
+    }
+    
+    .login a:hover{
+        transition: 0.2s;
+        color: #ff4d4d;
+    }
+    
+</style>
+<!--AS CSS ACABAM AQUI-->
+
+<body>
+    <div class="login">
+        <img src="./user-login.png" class="usuario" width="100" height="100" alt="imagem do usuario">
+        <h1>Member Login</h1>
+
+    <form>
+        <p>User</p>
+        <input type="text" name= "" placeholder="Enter your login here">
+        <p>Password</p>
+        <input type="password" name= "" placeholder="Enter your password here">
+        <input type="submit" name= "" placeholder="Login">
+        <a href="#">Forget your password?</a><br>
+        <a href="#">Not a member yet?</a><br>
+    </form>
+        
+
+    </div>
+</body>
+</html>
